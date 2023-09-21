@@ -1,0 +1,555 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  /* font-size: 62.5%; */
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  padding:0;
+  margin:0;
+
+}
+
+button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+h1, h2 {
+  font-family: 'Yeseva One', cursive;
+  color: rgb(13, 13, 37)
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* HEADER */
+nav {
+  float: right
+}
+
+nav ul {
+  padding: 25px 40px;
+}
+
+nav li {
+  display: inline;
+  padding-right: 40px;
+}
+nav a {
+  font-size: 15px;
+}
+
+/* MAIN */
+main {
+  height: 100vh;
+  background: red;
+  background: url(https://cdn.glitch.global/e04918a3-776b-4a53-843f-bd1b7d5f864b/brooke-lark-08bOYnH_r_E-unsplash.jpg?v=1647817692058) no-repeat;
+  background-size: cover;
+  background-position: top right;
+  width: 100%;
+}
+
+.main-container {
+  min-width: 37%;
+  position: absolute;
+}
+
+.intro {
+	margin-top: 150px;
+	margin-left: 100px;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h1 > span {
+  display: block;
+}
+
+.search {
+  padding: 4% 0;
+}
+
+.search * {
+  float: left;
+}
+
+.search input, button {
+  border: 0;
+  padding: 15px 0;
+}
+
+.search form {
+  width: 80%;
+}
+
+.search input {
+  width: 100%;
+  padding-left: 20px;
+  border-radius: 6px 0 0 6px;
+}
+
+.search button {
+  width: 20%;
+  border-radius: 0 6px 6px 0;
+  background: rgb(255, 136, 0);
+  color: white;
+}
+
+.socials {
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.socials li {
+  display: inline-block;
+}
+
+.socials li:first-child {
+  float: left;
+}
+
+.socials li:last-child {
+  float: right;
+}
+
+.socials i {
+  color: rgb(255, 136, 0);
+  padding-right: 8px;
+}
+
+/* ABOUT */
+.about {
+  height: 100vh;
+  background: url(https://i.imgur.com/wPJUV11.png) no-repeat;
+  background-size: cover;
+  background-position: top right;
+  width: 100%;
+}
+
+.about-content {
+  max-width: 50%;
+  float: right;
+  margin-right: 15%;
+  margin-top: 5%;
+  background-color: rgba(255,255,255, 0.7);
+  padding: 30px;
+}
+
+.section-header {
+	font-size: 20px;
+}
+
+.about p {
+  margin-bottom: 25px;
+  margin-top: -50px;
+  text-align: justify;
+  line-height: 1.3;
+}
+
+.about h2 span {
+  display: block;
+}
+
+.about a {
+  color: white;
+  background: rgb(255, 136, 0);
+  padding: 15px 30px;
+  border-radius: 9px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* ORDER */
+.order {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.order-content {
+  padding: 4% 0;
+}
+
+
+.meal-type  {
+  display: inline-block;
+  border-bottom: 1.5px solid lightgrey;
+  padding: 0 30px;
+  padding-top: -180px;
+}
+
+.meal-type li {
+  display: inline-block;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+
+.meal-type li:last-child {
+  padding-right: 0;
+}
+
+.dishes {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.dishOne {
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  background: lightblue;
+  background: url(https://lh3.googleusercontent.com/8IzOArmaFKM_vFvs1nrUsliTdT0YqMqKj9LaY6i0qCaU8RCNwD7Rem5lgil_WAU6ARl1XxUBRwuxrg8Eqr5T4E1ls6iXZrBsdcSJY4Xfu53U1_KFuBo6EN2w_sQSAuYvEn3rr-Fvlw=w2400) no-repeat;
+  background-size: 120%;
+  background-position: 40% 50%;
+}
+
+
+.dishTwo {
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  background: lightblue;
+  background: url(https://lh3.googleusercontent.com/A7-XTGvOfaaSIOgyW5FZp0fyMMBp8wZeUKb3YG_SCMjcCzCdmohg2e00Ksn3E-QLBMNU38sqf_0fYXpvoZ6_RycOdecYnd57T09Ut4oUkfdBb_6gY8qoBoEstojSYglyuupxyY_ngw=w2400) no-repeat;
+  background-size: 120%;
+  background-position: 40% 50%;
+}
+
+.dishThree {
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  background: lightblue;
+  background: url(https://lh3.googleusercontent.com/oI7v2Osy9gUCkEfJogdkyozC3rVTUK7l-CWgXuvy3TQbNUX8QQXNOaJjtmcPaskF5fIe8Sy0_r_6A774zfllNtWqhMT4SFfzo0fy9uY9Z0MIJhKFOdXOU_IoCEYFSnwWkvinZ9sXKA=w2400) no-repeat;
+  background-size: 120%;
+  background-position: 40% 50%;
+}
+
+.dishFour {
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  background: lightblue;
+  background: url(https://lh3.googleusercontent.com/VcXxjKhhgX4b9l5L3EI7GCLR8VXHZWQRn8jXDH-PwAN8N-hbrj_8-0MfJ5urkFNuy1fE7SneoearIuJvGqzr4h9WU68DYw5SOrFat4H67ZvrD04A6Wuhr1NvpYAiwzrnRHwHV58FIw=w2400) no-repeat;
+  background-size: 120%;
+  background-position: 40% 50%;
+}
+
+.dishFive {
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  background: lightblue;
+  background: url(https://lh3.googleusercontent.com/zXwhZD1Ln4zDwyOmXSGftvnikdI788jOpH8AYRm91AHy2e9tL54U-PhrQT_9rglrR7VnwZmW4bsPNhixkUB-yATkZ0OyOrLCkOLjnYCZQvFJyeFchC_15pZn4t3ApzYeDq6EHTe8bQ=w2400) no-repeat;
+  background-size: 120%;
+  background-position: 40% 50%;
+}
+
+.dishSix {
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  background: lightblue;
+  background: url(https://lh3.googleusercontent.com/ZPmxEG-tONcW9olCj3N6C6NhyEBvkoGu2jTNVsr5DdgpBsG_eHXxAk0wpG3cy1_Wf0ODp06Yh1A-IXV-twVTtR0YTb7y_hIZ518JABOraw4HSuhePUfqi0JAAt9qnVLNKr36fzg16g=w2400) no-repeat;
+  background-size: 120%;
+  background-position: 40% 50%;
+}
+
+.dishSeven {
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  background: lightblue;
+  background: url(https://lh3.googleusercontent.com/xGLuRLkExTWXtJbyY6Qe6i33MA-igyAj2L2plDT8WRTFItwZtHTw9yIAJ2pVNv3IxLVdZW-92fS44--dtNaJYNJQO2J2EttY7EYiCFoQvkhPfUvSxmBDuWSUUk-70fVHqrEC7EFzKw=w2400) no-repeat;
+  background-size: 120%;
+  background-position: 40% 50%;
+}
+
+.dishEight {
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  background: lightblue;
+  background: url(https://lh3.googleusercontent.com/EyoLhjXV08n14sGwXLIL7dNaxUGOnnAFSCnSlVTbyiIUczsZ-ca4jJvS0w7zqLrtwpTx6WOth8qcZbDpP8fKJmrOsWabUZciM89rdEAJU-8xpaUcfejn-8N-duOfWNZtrk97Bxhy2g=w2400) no-repeat;
+  background-size: 120%;
+  background-position: 40% 50%;
+}
+
+.hover {
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: -538px;
+  margin-left: 285px;
+  padding-top: 50px;
+}
+
+.visible {
+  visibility: visible;
+  color: white;
+}
+
+.visible.main-btn {
+  color: white;
+}
+
+.small-yeseva {
+  font-family: 'Yeseva One', cursive;
+  font-size: 25px;
+  margin: 0% 2%;
+}
+
+.small-body {
+  font-size: 18px;
+  margin: 0% 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+  background-color: rgb(255, 124, 2);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5%;
+  padding: 5px;
+  font-size: 20px;
+  margin: 2% 0;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.menu-item .main-btn {
+  padding: 10% 5%;
+  flex: 0 0 auto;
+}
+
+/* CONTACT */
+.contact {
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+  background: url(https://cdn.glitch.global/e04918a3-776b-4a53-843f-bd1b7d5f864b/brooke-lark-EHlyqMOD2M0-unsplash.jpg?v=1647817696791) no-repeat;
+  background-size: cover;
+  margin-top: 300px;
+}
+
+.contact-content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1% 0;
+}
+
+.phone * {
+  display: block;
+}
+
+.phone span:first-of-type {
+  margin: 15px 0;
+}
+
+.phone i, .number {
+  color: rgb(255, 136, 0);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.number {
+  margin-bottom: 3%;
+}
+
+.number, .time > span + span {
+  font-family: 'Yeseva One', cursive;
+}
+
+.hours {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 3%;
+}
+
+.hours section:first-child {
+  float: left;
+}
+
+.hours section:last-child {
+  float: right;
+}
+
+.time {
+  width: 40%;
+}
+
+.time span {
+  display: block;
+}
+
+.time span:first-child {
+  padding-bottom: 2%;
+}
+
+.time span:last-child {
+  font-size: 2rem;
+}
+
+.icon svg {
+	padding-top: 50px;
+}
+.video {
+  width: 100%;
+  min-height: 500px;
+  background: lightblue;
+  background: url(https://cdn.glitch.global/e04918a3-776b-4a53-843f-bd1b7d5f864b/brooke-lark-GwNsgnSAfQM-unsplash.jpg?v=1647817672787) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  margin: 0 auto;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background: white;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.testimonials-content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10% 0;
+}
+
+.opinion span {
+  display: block;
+}
+
+.opinion p {
+  width: 85%;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 1.5;
+  font-size: .95rem;
+}
+
+.opinion li {
+  display: inline-block;
+  color: gold;
+  margin: 10px 0;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.user-title {
+  font-size: .89rem;
+  color: gray;
+}
+
+.user-pic {
+  height: 100px;
+  width: 100px;
+  background: yellow;
+  background: url(https://lh3.googleusercontent.com/H7hMLsSihpaQ6cZxcVV15xu0OqnHqBwQ0I-Zt54WpGrfuRAQJTTJ_doNLoAgZsgu32K6aKB-DDJ8UANfEsQZmtBjbP8-tuEjTiCIjphFuJjM0yVlku4zGG95Kmw-7Si5KlHbTtpnCg=w2400) no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.section-header {
+  color: rgb(255, 136, 0);
+}
+
+.section-title {
+  font-size: 4rem;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1060px) {
+  .about-content {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .dish {
+    max-width: 20%;
+  }
+  
+  .time {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .search form {
+    width: 78%;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .about-content {
+    max-width: 90%;
+    margin: 10% 5%;
+    float: none;
+  }
+
+  .testimonials-content {
+    width: 90%;
+    padding: 30% 0;
+  }
+  
